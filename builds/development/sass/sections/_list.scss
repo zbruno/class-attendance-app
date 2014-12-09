@@ -1,0 +1,83 @@
+/* List Styles */
+
+.userlist {
+  width: 100%;
+  margin: 0 auto;
+  opacity: .95;
+  z-index: 10;
+  margin-top: 20px;
+  margin: 0;
+  padding: 0;
+  li {
+    width: 45%;
+    float: left;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    @media all and (max-width: 600px) {
+      width: 100%;
+    }
+    &:hover {
+      background-color: #EEE8D5;
+    }
+  }
+  .expanded {
+    width: 100%;
+    background-color: #D3E0E3;
+    form {
+      width: 100%;
+      padding: 10px 0;
+      input {
+        width: 80%;
+      }
+    }
+    .btn-love {
+      background-color: #C61C6F;
+    }
+  }
+  .checkin {
+    text-align: center;
+    .info {
+      display: block;
+      text-align: center;
+      @media all and (max-width: 600px) {
+        width: 70%;
+      }
+    }
+    .buttons {
+      display: block;
+      text-align: center;
+      margin-right: 5px;
+    }
+    .showcheckins {
+      ul.awardslist {
+        margin-top:5px;
+        li {
+          width: auto;
+          padding: 0 20px;
+          margin: 2px;
+          background-color: #C61C6F;
+          color: white;
+          font-weight: normal;
+          border-radius: 5px;
+          font-family: $font-stack;
+          &:hover {
+            background-color: #F5974E;
+          }
+        }
+        .delete-love {
+          background-color: transparent;
+          background-size: 15px 15px;
+          background-position: center 40%;
+          margin:0;
+          border: none;
+        }
+      }
+    }
+  }
+}
+

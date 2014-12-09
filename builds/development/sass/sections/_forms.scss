@@ -1,0 +1,42 @@
+/* Form Styles */
+
+input {
+  width: 95%;
+  display: inline-block;
+  padding: 10px 0 10px 15px;
+  font-size: 1rem;
+  color: $red;
+  background: rgba(255,255,255,0.4);
+  border-radius: 5px;
+  outline: 0;
+  margin: 5px 0;
+}
+
+input[type=radio] {
+  width: auto;
+}
+
+
+.ng-enter.ng-enter-active,
+.ng-leave {
+  opacity: 1;
+  height: 80px;
+  overflow: hidden;
+}
+
+.ng-leave.ng-leave-active,
+.ng-enter {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+p.error {
+  color: $orange;
+  font-size: .8em;
+  padding-top: 5px;
+}
+
+form.addmeeting {
+  margin-bottom: 25px;
+}

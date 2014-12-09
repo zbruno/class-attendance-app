@@ -1,0 +1,45 @@
+<section class="meetings cf">
+
+  <div ng-hide="signedIn()" class="sorry">
+    <h1>Sorry!</h1>
+    <p>Only registered users can create and manage meetings.</p>
+    <p>Please <a ng-href="#/register">register</a> or <a ng-href="#/login">login</a>.</p>
+
+  </div>
+  <div ng-show="signedIn()" class="display-meetings">
+    <h1>Add Meetings</h1>
+    <form class="formgroup addmeeting cf"
+      name="myform"
+      ng-submit="addMeeting()"
+      novalidate>
+      
+      <div class="inputwrapper">
+        <input type="text" name="meetingname" placeholder="Meeting Name"
+          ng-model="meetingname" ng-required="true">
+      </div>
+      <button type="submit" class="btn" 
+        ng-disabled="myform.$invalid">+</button>
+    </form>
+    <hr>
+
+    <h2 ng-if="howManyMeetings>0">Your Meetings</h2>
+    <div class="meeting" ng-repeat="(key, meeting) in meetings">
+      <span class="text">{{meeting.name}}</span>
+        <br>
+      <a class="btn tooltip" 
+        ng-href="#/checkins/{{currentUser.regUser}}/{{key}}/checkinsList">
+        <i class="fa fa-list"></i>
+        <span>View list of checked in users.</span></a>
+
+      <a class="btn tooltip" 
+        ng-href="#/checkins/{{currentUser.regUser}}/{{key}}">
+        <i class="fa fa-check"></i>
+        <span>Check-in for meeting</span></a>
+
+      <button class="btn btn-delete tooltip" confirmation-needed="Are you sure you want to delete the meeting?" ng-click="deleteMeeting(key)">
+        <i class="fa fa-trash-o"></i>
+        <span>Delete this meeting</span></button>
+    </div>
+  </div>
+  
+</section>

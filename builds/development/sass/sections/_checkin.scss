@@ -1,0 +1,57 @@
+.search {
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 20px 30px;
+  border-radius: 20px;
+  text-align: left;
+  font-size: 1.1rem;
+  font-family: $font-stack;
+  h2 {
+    color: #124E61;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  select {
+    font-size: 1rem;
+    padding: 10px 0 10px 15px;
+    color: #475B62;
+    background: rgba(255,255,255,0.4);
+    border: 1px solid rgba(0,0,0,0.3);
+  }
+  input[type="text"] {
+    margin-bottom: 10px;
+  }
+  input[type="checkbox"] {
+    display: inline;
+    background-color: #ddd;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 15px;
+    -webkit-appearance: none;
+  }
+  label {
+    font-size: 1rem;
+    font-family: $font-stack;
+    color: #576E75;
+  }
+  .formgroup {
+    float: left;
+    width: 33%;
+    @media all and (max-width: 700px) {
+      width: 50%;
+    }
+    @media all and (max-width: 550px) {
+      width: 100%;
+    }
+  }
+  .buttons {
+    display: block;
+    width: 33%;
+    float: right;
+    text-align: right;
+    @media all and (max-width: 700px) {
+      width: 100%;
+      float: right;
+    }
+  }
+}

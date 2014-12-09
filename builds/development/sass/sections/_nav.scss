@@ -1,0 +1,65 @@
+nav {
+  width: 100%;
+  background: darken($red, 10%);
+  margin-bottom: 25px;
+  .table {
+    display: table;
+    margin: 0 auto;
+  }
+  ul {
+    width: 100%;
+    margin: 0 auto;
+    li {
+      float: left;
+      color: #FCFCFC;
+      font-family: $font-stack;
+      a {
+        float: left;
+        text-decoration: none;
+        padding: 15px 20px;
+        color: #FCFCFC;
+        &:hover {
+          color: #FCFCFC;
+          background-color: darken($red, 20%);
+        }
+      }
+    }
+    .user {
+      background-color: #D24244;
+      color: #FCFCFC;
+      font-family: $font-stack;
+    }
+    .user.hello {
+      margin-left: 60px;
+      padding: 10px 15px;
+    }
+    .branding {
+      a {
+        font-size: 1.5em;
+        text-align: left;
+        background-color: darken($red, 25%);
+        color: #FCFCFC;
+        &:hover {
+          background-color: darken($red, 35%);
+          color: #FCFCFC;
+        }
+      }
+    }
+  }
+}
+
+.userinfo {
+  text-align: center;
+  color: $purple;
+  font-family: $font-stack;
+  padding-bottom: 15px;
+  span.user {
+    font-size: 1.5rem;
+  }
+  a {
+    color: #EFC94C;
+  }
+  input {
+    width: auto;
+  }
+}
